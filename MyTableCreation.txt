@@ -1,0 +1,42 @@
+Create Table Patient
+(
+    Patient_name Char(20),
+    Gender Char(12),
+    PhNo Number(10),
+    Address Varchar(40),
+    Test_id Number(10) Primary Key
+);
+
+Create Table Registration
+(
+    Test_id References Patient(Test_id) On Delete Cascade,
+    Patient_id Number(6) Primary Key,
+    Room_Type References Room(Room_Type) On Delete Cascade,
+    Room_Number References Room(Room_Number) On Delete Cascade,
+    Admission_Date Varchar(12),
+    Discharge_Date Varchar(12)
+)
+
+Create Table Doctor
+(
+    Doctor_id Varchar(10),
+    Name Char(20),
+    Type Char(12)
+)
+
+Create Table Payment
+(
+    Bill_No Number(12),
+    Patient_id References Registration(Patient_id) On Delete Cascade,
+    Amount Varchar(12)
+)
+
+Create Table Relative
+(
+    Type Char(20),
+    Name Char(20),
+    Phone Number(10),
+    EmailId Varchar(24),
+    Address Varchar(40)
+)
+    

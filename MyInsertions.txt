@@ -1,0 +1,32 @@
+INSERT INTO Patient VALUES ('Satyam', 'M', 6205620273, 'Sector-4 Qr No-210', 1234567890);
+INSERT INTO Patient VALUES ('Arpit', 'M', 7340412567, 'Sector-8 Qr No-255', 2234567890);
+INSERT INTO Patient VALUES ('Ajit', 'M', 6206994821, 'Sector-5 Qr No-107', 3234567890);
+INSERT INTO Patient VALUES ('Vinita', 'F', 8210244325, 'Sector-5 Qr No-200', 4234567890);
+INSERT INTO Patient VALUES ('Akshay', 'M', 6203102997, 'Sector-3 Qr No-353', 5234567890);
+SELECT * FROM Patient;
+
+INSERT INTO Registration VALUES (1234567890, 9837463569, 'Normal', 3, '12/10/20', '27/10/20');
+INSERT INTO Registration VALUES (2234567890, 7483947320, 'Normal', 2, '14/10/20', '29/10/20');
+INSERT INTO Registration VALUES (3234567890, 7322947394, 'Equipped', 7, '07/10/20', '01/10/20');
+INSERT INTO Registration VALUES (4234567890, 4347483858, 'Normal', 5, '09/10/20', '23/10/20');
+INSERT INTO Registration VALUES (5234567890, 6647348438, 'Equipped', 6, '08/10/20', '22/10/20');
+SELECT * FROM Registration;
+
+INSERT INTO Doctor VALUES (101, 'Siddharth', 'Visiting');
+INSERT INTO Doctor VALUES (102, 'Preeti', 'Visiting');
+INSERT INTO Doctor VALUES (103, 'Pramod', 'Permanent');
+SELECT * FROM Doctor
+
+INSERT INTO Payment VALUES (132, 9837463569, 'Rs1200');
+INSERT INTO Payment VALUES (126, 7483947320, 'Rs1300');
+INSERT INTO Payment VALUES (143, 7322947394, 'Rs7300');
+INSERT INTO Payment VALUES (137, 4347483858, 'Rs1200');
+INSERT INTO Payment VALUES (129, 6647348438, 'Rs6500');
+SELECT * FROM Payment
+
+INSERT INTO Relative VALUES ('Father', 'PK Dubey', 8210199836, 'abcd@gmail.com', 'Sector-4 Qr No-210');
+INSERT INTO Relative VALUES ('Father', 'CB Patel', 7459873263, 'bcde@gmail.com', 'Sector-5 Qr No-107');
+INSERT INTO Relative VALUES ('Father', 'Shakti Das', 8430456210, 'cdef@gmail.com', 'Sector-5 Qr No-107');
+INSERT INTO Relative VALUES ('Father', 'VD Pandey', 9108169764, 'defg@gmail.com', 'Sector-5 Qr No-200');
+INSERT INTO Relative VALUES ('Father', 'AK Chaoudhary', 9304658077, 'efgh@gmail.com', 'Sector-3 Qr No-353');
+SELECT * FROM Relative
